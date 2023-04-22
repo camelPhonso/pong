@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #eee;
+  --highlights-color: #af35cc;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+#game-board {
+  background-color: var(--primary-color);
+  height: 90vmin;
+  width: 90vmin;
+  margin: auto;
+  border: 0.5vmin solid var(--primary-color);
+  position: relative;
+}
+
+.ball {
+  background-color: var(--secondary-color);
+  height: 2.5vmin;
+  width: 2.5vmin;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.paddle {
+  background-color: var(--secondary-color);
+  height: 10vmin;
+  width: 1.5vmin;
+  position: absolute;
+}
+
+.paddle--player {
+  left: 0;
+}
+
+.paddle--npc {
+  right: 0;
+}
